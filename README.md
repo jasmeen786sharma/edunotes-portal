@@ -1,5 +1,3 @@
-# edunotes-portal
-my note sharing portal
 # 📘 EduNotes Portal
 
 A premium, role-based educational portal designed for students and teachers. Featuring a modern Apple VisionOS theme, real-time attendance tracking, secure notes sharing, and an intelligent study assistant powered by **Google Gemini 3.1 Flash Preview**.
