@@ -1,0 +1,12 @@
+{
+  "name": "edunotes-portal",
+  "version": "1.0.0",
+  "description": "Premium Educational Portal",
+  "scripts": {
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "cd backend && node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
