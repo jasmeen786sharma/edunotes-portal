@@ -254,10 +254,20 @@ function getSmartReply(message) {
 }
 
 // Serve Frontend Build
-app.use(express.static(path.join(__dirname, '../frontend/build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-});
+const buildPath = path.join(__dirname, '../frontend/build');
+console.log(`🔍 Checking frontend build at: ${buildPath}`);
+if (fs.existsSync(buildPath)) {
+  console.log("✅ Frontend build folder found!");
+  app.use(express.static(buildPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(buildPath, 'index.html'));
+  });
+} else {
+  console.log("❌ Frontend build folder NOT found! Serving fallback API message.");
+  app.get('*', (req, res) => {
+    res.status(404).send("Frontend build not found. Please check deployment logs.");
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));

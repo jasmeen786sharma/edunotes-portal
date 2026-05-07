@@ -2,7 +2,7 @@ services:
   - type: web
     name: edunotes-portal
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && cd backend && npm install && cd ../frontend && npm install && npm run build
     startCommand: npm start
     envVars:
       - key: PORT
