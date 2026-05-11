@@ -2,8 +2,7 @@
 
 A premium, role-based educational portal designed for students and teachers. Featuring a modern Apple VisionOS-inspired glassmorphism theme, real-time attendance tracking, secure notes sharing, and an intelligent study assistant powered by **Google Gemini 1.5 Flash**.
 
-### 🚀 Live Demo
-**Website:** [https://edunotes-portal-jasmeen786sharma.onrender.com/](https://edunotes-portal-jasmeen786sharma.onrender.com/)
+### 🚀 Report [https://drive.google.com/file/d/1JGs_EdSGzDCn3AlIL0zEXtJa9W1-o4_a/view?usp=drivesdk]
 
 ---
 
